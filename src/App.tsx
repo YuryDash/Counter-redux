@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
+import {Settings} from "./components/settings/Settings";
+import {Counter} from "./components/counter/Counter";
 
 function App() {
   return (
     <div className="App">
             <div className="wrapper">
                 <h1>This is title</h1>
-                <div className="body">
-                    <input placeholder={'inter max num'} className={'max__num'} type="number" max={1000} min={1}/>
-                    <input placeholder={'inter min num'} className={'min__num'} type="number" max={1000} min={0}/>
-                </div>
+                    <Settings/>
+                    <Counter/>
             </div>
     </div>
   );
